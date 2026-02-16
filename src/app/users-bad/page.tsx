@@ -10,7 +10,7 @@ export default function UsersPage(){
 
     // API通信
     useEffect(() => {
-        const fetchUsers = async () => {  // ← ここを修正
+        const fetchUsers = async () => {
             try {
                 setLoading(true)
                 const response = await fetch('https://jsonplaceholder.typicode.com/users')
